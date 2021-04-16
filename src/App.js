@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from "react"
+import styled from "styled-components"
+import Form from "./form"
+import Form2 from "./form2"
+
+const Format = styled.div`
+  padding-top: 25vh;
+  background-color: #0d0d0d;
+  min-height: 75vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 50px;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Format>
+      <h1>Title</h1>
+      <Form2/>
+    </Format>
   );
 }
 
